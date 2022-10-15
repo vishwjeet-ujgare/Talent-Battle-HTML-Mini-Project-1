@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Enquiry</title>
+</head>
+<style>
+    .main-container {
+        display: flex;
+        /* border: 2px solid black; */
+        padding: 0px 20px;
+    }
+
+    /* .main-container div {
+        width: 100%;
+        border: 2px solid rgb(179, 42, 42);
+        margin: 5px;
+
+    } */
+    .right-section,
+    .left-section {
+        width: 45%;
+        border: 2px solid rgb(179, 42, 42);
+        margin: 5px;
+        padding: 20px;
+
+
+    }
+
+
+
+    form div {
+        width: 100%;
+        margin-top: 2%;
+
+    }
+
+
+    label {
+        width: fit-content;
+    }
+
+    input {
+        height: 25px;
+        width: 50%;
+
+    }
+
+
+    select {
+        height: 25px;
+        width: 50%;
+    }
+  #back-div {
+        background-color: brown;
+        margin-top: 12px;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+
+    button {
+        height: 30px;
+        width: 250px;
+        margin: 5px;
+    }
+   
+</style>
+
+<header><h2 style="text-align: center;">Admission Enquiry Form </h2> </header>
+<body>
+
+
+    <main class="main-container">
+        <div class="left-section">
+            <h3>Admission Enquiry</h3>
+            <form action="admissionEnquiryReqSent.html" method="get">
+                <div class="row">
+                    <label for="name">Full Name *</label>
+                    <input type="" name="name" id="name" required>
+                </div>
+                <div class="row">
+                    <label for="phone">Mobile Number *</label>
+                    <input type="text" name="phone" id="phone" minlength="10" maxlength="10" size="10" required>
+                </div>
+                <div class="row">
+                    <label for="email">Email Id</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="row">
+                    <label for="enquiryFor">Admission For *</label>
+                    <select name="enquiryFor" id="enquiryFor">
+                        <option value="Engineering">Engineering</option>
+                        <option value="Diploma">Diploma</option>
+                        <option value="Pharmacy ">Pharmacy </option>
+                        <option value="Education">Education </option>
+                        <option value="School   ">School </option>
+                        <option value="MBA      ">MBA </option>
+                        <option value="MCA      ">MCA </option>
+                        <option value="Commerce ">Commerce </option>
+                        <option value="Science  ">Science </option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+
+        <div class="right-section">
+            <h3>Admission Contact</h3>
+            <div>
+                <p>Prof. Ulhas Malwade (Admission Coordinator) (First Year Engineering Admission Enquiry )
+                    +91 9975563891</p>
+            </div>
+            <hr>
+            <div>
+                <p>
+                    Prof. Manish Gardi (Admission Coordinator) (First Year Engineering Admission Enquiry )
+                    +91 9890570405
+                </p>
+            </div>
+            <hr>
+
+            <div>
+                <p>Prof. Chandrakant Hake (HoD MBA) (MBA Admission Enquiry )
+                    +91 7588078849 /8668556599</p>
+            </div>
+            <hr>
+
+            <div>
+                <p>Prof. Swayam Shaha (MCA Admission Enquiry )
+                    +91 9890792906</p>
+            </div>
+            <hr>
+            <div>
+                <p>admission@jspmjscoe.edu.in</p>
+            </div>
+        </div>
+    </main>
+
+      <div id="back-div">
+        <button><a href="/academics.html">Back</a></button>
+    </div>
+
+</body>
+
+</html>

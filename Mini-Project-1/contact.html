@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Contact details</title>
+</head>
+<style>
+    form {
+        display: inline-block;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    #back-div {
+        background-color: brown;
+        margin-top: 12px;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+
+    button {
+        height: 30px;
+        width: 250px;
+        margin: 5px;
+    }
+
+    div {
+        margin-bottom: 20px;
+    }
+
+    input {
+        width: 500px;
+        height: 30px;
+
+
+    }
+
+    textarea {
+        width: 500px;
+    }
+
+    .clg-info {
+
+        text-align: center;
+    }
+
+    .clg-info div {
+        display: inline-block;
+        border: 2px solid gray;
+        margin: 5px;
+        padding: 15px;
+    }
+</style>
+
+<body>
+
+    <header>
+        <h2 style="text-align: center;">Contact with us</h2>
+    </header>
+    <div style="text-align: center;">
+
+        <form action="admissionEnquiryReqSent.html" method="get">
+            <div class="row">
+                <input type="text" placeholder="Your Full Name" name="name" id="name" required>
+            </div>
+
+            <div class="row">
+
+                <input type="text" placeholder="Phone Number" name="phone" minlength="10" maxlength="10" size="10"
+                    required>
+            </div>
+
+            <div class="row">
+
+                <input type="text" placeholder="Email Id" name="email" id="email">
+            </div>
+
+            <div class="row">
+                <input placeholder="select/enter state" type="text" list="state" />
+                <datalist id="state">
+                    <option>Maharashtra</option>
+                    <option>Gujrat</option>
+                    <option>UP</option>
+                    <option>MP</option>
+                    <option>Manipur</option>
+                    <option>Goa</option>
+                    <option>J & K</option>
+                </datalist>
+            </div>
+
+            <div class="row">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Write Your Message...." required></textarea>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+
+        </form>
+    </div>
+
+    <div class="clg-info">
+        <div>
+            <label for="">College</label>
+            <p>JSPM's Jayawantrao Sawant College of Engineering, Hadapsar</p>
+        </div>
+
+        <div>
+            <label for="">College Address</label>
+
+            <p>
+            <address>Survey No. 58, Indrayani Nagar, Handewadi Road, Hadapsar, Pune, Maharashtra-411028</address>
+
+            </p>
+        </div>
+    </div>
+
+
+
+    <div id="back-div">
+        <button><a href="/academics.html">Back</a></button>
+    </div>
+</body>
+
+</html>
